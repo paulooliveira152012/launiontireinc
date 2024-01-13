@@ -117,6 +117,16 @@ li {
     background-repeat: no-repeat;
     /* background-color: red; */
     height: 600px;
+    
+}
+
+.store {
+    background-image: url('./store.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    height: 600px;
 }
 
 .salesign {
@@ -127,9 +137,42 @@ li {
     display: none;
 }
 
+.calltoaction {
+    font-size: 30px;
+    text-align: justify;
+    padding: 50px;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+/* Add this style to your CSS file or in the <style> tag in <head> */
+button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for better appearance */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
 @media screen and (min-width: 1600px) {
-    .tirepic {
+    .tirepic, .store {
         background-size: contain;
+        margin: 10px;
     }
 
     main {
@@ -213,4 +256,8 @@ footer {
     /* bottom: 0; */
     width: 100%;
     position: relative;
+}
+
+#title2 {
+    color: red;
 }

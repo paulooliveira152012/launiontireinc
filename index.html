@@ -11,30 +11,32 @@
 
   <header class="bg-dark text-white text-center p-4">
     <h1>La Union Tire Inc.</h1>
-    <p>Your one-stop destination for quality tires and services.</p>
+    <p id="slogan">Your one-stop destination for quality tires and services.</p>
   </header>
 
   <div class="hero"></div>
-
+    <!-- Add a button for language toggle -->
+    <div class="buttonContainer">
+        <button onclick="toggleLanguage()" id="buttonElement">Español</button>
+    </div>
   <main>
-  
-  
     <div class="left">
-        <h2>Our Services</h2>
+        <h2 id="title">Our Services</h2>
+
         <ul>
-        <li>&#10003; Tire Sales</li>
-        <li>&#10003; Tire Installation</li>
-        <li>&#10003; Wheel Alignment</li>
-        <li>&#10003; Tire Rotation</li>
-        <li>&#10003; Flat Tire Repair</li>
-        <li>&#10003; Brake Services</li>
-        </ul>  
+            <li id="tireSales">&#10003; Tire Sales</li>
+            <li id="tireInstallation">&#10003; Tire Installation</li>
+            <li id="wheelAlignment">&#10003; Wheel Alignment</li>
+            <li id="tireRotation">&#10003; Tire Rotation</li>
+            <li id="flatTireRepair">&#10003; Flat Tire Repair</li>
+            <li id="brakeServices">&#10003; Brake Services</li>
+        </ul>
     </div>
 
   </main>
 
   <article class="intro">
-    <div class="content">
+    <div class="content" id="content">
         <p>Welcome to La Union Tire Inc. – Your Trusted Hub for Quality Tires and Expert Services!</p>
         <p>Discover a seamless tire shopping experience where quality meets affordability. We're your go-to destination for top-notch tires, professional tire repairs, and expert brake installations. Our commitment to excellence, unmatched expertise, and a vast selection make us the preferred choice for reliable and efficient tire services.</p>
         <p>Why choose Us?</p>
@@ -57,17 +59,22 @@
     <div class="container1">
         <div class="left salesign"></div>
         <div class="right tirepic"></div>
+        <div class="right store" ></div>
         <div class="right salesign"></div>
              
     </div>
 
     <div class="container2" >
-        <h2 style="margin: auto;">Parternship</h2>
+        <h2 id="partnership" style="margin: auto;">Parternship</h2>
         <div class="parnershipContainer" >
             <div class="greenmax"></div>
             <div class="otani"></div>
             <div class="amistrong"></div>
         </div>
+    </div>
+
+    <div class="container2 calltoaction" id="callToAction">
+        <p>"Revitalize Your Drive with La Union Tire Inc.! Explore our premium tire selection, experience expert tire repairs, and elevate your safety with precision brake installations. Choose reliability, choose quality – schedule your visit today and let us enhance your driving experience. Trust La Union Tire Inc. for unparalleled expertise and exceptional service. Your journey to superior tires and reliable brakes starts here!"</p>
     </div>
   </main>
 
@@ -77,15 +84,15 @@
     
 
     <section>
-    <h2 style="color: white;">Contact Us</h2>
-    <p>Visit us at: 630 New Point Rd Elizabeth, NJ 07206</p>
+    <h2 style="color: white;" id="contact">Contact Us</h2>
+    <p id="visitUs">Visit us at: 630 New Point Rd Elizabeth, NJ 07206</p>
     <p>Email: info@tireshop.com</p>
-    <p>Phone: (908) 354-3044</p>
+    <p id="phone">Phone: (908) 354-3044</p>
     </section>
 
     <p>&copy; 2024 Tire Shop</p>
   </footer>
-
+  <script src="js.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
