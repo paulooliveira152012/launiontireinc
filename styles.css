@@ -79,7 +79,7 @@ header {
     width: 300px;
     background-size: cover;
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 
@@ -202,28 +202,28 @@ button:hover {
     .parnershipContainer  {
         /* display: none; */
     }
-}
-
-@media screen and (min-width: 1000px) {
-
-    button {
-        background-color: red;
-    }
-
-    .intro {
-        padding: 30px;
-    }
-
-    .intro p, li {
-        font-size: 20px;
-    }
 
     .container1 {
-        display: block;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-evenly;
+        /* flex-direction: row;*/
     }
 
-    .tirepic, .store {
-        margin: 20px;
+    .container1 div {
+        width: 25%;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container2 {
+        /* background-color: red; */
+    }
+
+    .container2 div {
+        margin: auto;
     }
 
     .parnershipContainer {
@@ -231,10 +231,42 @@ button:hover {
         margin: auto;
     }
 
+    .tirepic, .store {
+        display: block;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .container1 div {
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .intro {
+        padding: 30px;
+    }
+
+    .intro p, li {
+        font-size: 30px;
+    }
+
+    .container1 {
+        /* display: block; */
+    }
+
+    .tirepic, .store {
+        margin: 20px;
+    }
+
     .parnershipContainer .greenmax, .otani, .amistrong {
         /* width: 100%; */
         margin: auto;
     }
+
+    
 
 }
 
