@@ -10,16 +10,19 @@ function toggleLanguage() {
     var buttonElement = document.getElementById("buttonElement");
     var slogan = document.getElementById("slogan")
     var partnership = document.getElementById("partnership")
+    // contact us session
     var contact = document.getElementById("contact")
-    var visitUs = document.getElementById("visitUs")
+    var visit = document.getElementById("visit")
     var phone = document.getElementById("phone")
-    var title = document.getElementById("title")
+    var ourServices = document.getElementById("ourServices")
+    var title2 = document.getElementById("title2")
     
 
 
 
     // Check the current language and toggle accordingly
     if (contentElement.innerText.includes("Welcome")) {
+        
         // Udate slogan to Spanish
         slogan.innerText = "Tu destino único para neumáticos de calidad y servicios."
         // Update content section to Spanish
@@ -34,8 +37,20 @@ function toggleLanguage() {
             + "</ul>"
             + "<p>Ya sea un conductor experimentado o un entusiasta de la carretera nuevo, confíe en La Union Tire Inc para neumáticos confiables y servicios de primera. Experimente la diferencia en calidad, servicio, y confiabilidad; elíjanos para todas sus necesidades de neumáticos y frenos. Visítenos hoy y eleve su experiencia de conducción con nuestra experiencia inigualable en La Union Tire Inc.</p>";
 
+            // Update Our Services
+        ourServices.innerText = "Nuestros Servicios";
+
+            // Update Our Services
+            partnership.innerText = "Alianza comercial";
+
         // Update call to action section to Spanish
         callToActionElement.innerHTML = "¡Revitalize su conducción con La Union Tire Inc.! Explore nuestra selección premium de neumáticos, experimente reparaciones expertas de neumáticos y eleve su seguridad con instalaciones precisas de frenos. Elija confiabilidad, elija calidad: programe su visita hoy y permita que mejoremos su experiencia de conducción. Confíe en La Union Tire Inc. por su experiencia inigualable y servicio excepcional. Su viaje hacia neumáticos superiores y frenos confiables comienza aquí.";
+
+        // Update content to Spanish
+        contact.innerText = "Contáctenos";
+        visit.innerText = "Visítenos en: 630 New Point Rd Elizabeth, NJ 07206";
+        phone.innerText = "Teléfono: (908) 354-3044";
+        
 
         // Update service names to Spanish
         tireSalesElement.innerHTML = "&#10003; Venta de Neumáticos";
@@ -45,11 +60,7 @@ function toggleLanguage() {
         flatTireRepairElement.innerHTML = "&#10003; Reparación de Neumáticos Desinflados";
         brakeServicesElement.innerHTML = "&#10003; Servicios de Frenos";
 
-        // Update content to Spanish
-        contactHeader.innerText = "Contáctenos";
-        visitUs.innerText = "Visítenos en: 630 New Point Rd Elizabeth, NJ 07206";
-        email.innerText = "Email: info@tireshop.com";
-        phone.innerText = "Teléfono: (908) 354-3044";
+        
 
         // Update button text to English
         buttonElement.innerText = "English";
@@ -57,8 +68,7 @@ function toggleLanguage() {
         // Update partnership to spanish
         partnership.innerText = "Colaboración";
 
-        // Update Our Services
-        ourServices.innerText = "Nuestros Servicios";
+        
 
 
     } else {
@@ -77,6 +87,9 @@ function toggleLanguage() {
             + "</ul>"
             + "<p>Whether you're a seasoned driver or a new road enthusiast, trust La Union Tire Inc for reliable tires and top-notch services. Experience the difference in quality, service, and reliability – choose us for all your tire and brake needs. Visit today and elevate your driving experience with unparalleled expertise at La Union Tire Inc.</p>";
 
+                // Update Our Services
+        ourServices.innerText = "Our Services";
+
         // Update call to action section to English
         callToActionElement.innerHTML = "Revitalize Your Drive with La Union Tire Inc.! Explore our premium tire selection, experience expert tire repairs, and elevate your safety with precision brake installations. Choose reliability, choose quality – schedule your visit today and let us enhance your driving experience. Trust La Union Tire Inc. for unparalleled expertise and exceptional service. Your journey to superior tires and reliable brakes starts here!";
 
@@ -91,7 +104,7 @@ function toggleLanguage() {
 
           // Update content to English
           contactHeader.innerText = "Contact Us";
-          visitUs.innerText = "Visit us at: 630 New Point Rd Elizabeth, NJ 07206";
+          visit.innerText = "Visit us at: 630 New Point Rd Elizabeth, NJ 07206";
           email.innerText = "Email: info@tireshop.com";
           phone.innerText = "Phone: (908) 354-3044";
 

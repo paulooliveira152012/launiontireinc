@@ -198,6 +198,44 @@ button:hover {
     .salesign {
         display: block;
     }
+
+    .parnershipContainer  {
+        /* display: none; */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    button {
+        background-color: red;
+    }
+
+    .intro {
+        padding: 30px;
+    }
+
+    .intro p, li {
+        font-size: 20px;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .tirepic, .store {
+        margin: 20px;
+    }
+
+    .parnershipContainer {
+        display: block;
+        margin: auto;
+    }
+
+    .parnershipContainer .greenmax, .otani, .amistrong {
+        /* width: 100%; */
+        margin: auto;
+    }
+
 }
 
 .section1 {
