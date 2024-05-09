@@ -260,10 +260,10 @@ footer {
 
     .images div {
         height: 100%;
-        width: 500px;
+        width: 100%;
         background-size: contain;
         margin:  10px;
-
+        /* background-color: red; */
     }
 
     .images .salesign {
