@@ -29,7 +29,6 @@ header {
     background-color: #333;
     color: white;
     margin-top: 20px;
-    font-size: 30px;
 }
 
 .container1 {
@@ -82,6 +81,9 @@ header {
     margin-bottom: 70px;
 }
 
+p {
+    font-size: 20;
+}
 
 
 
@@ -90,7 +92,6 @@ li {
 }
 
 .left {
-    /* background-color: green; */
     border-radius: 20px;
     padding: 20px;
     flex: 1;
@@ -165,7 +166,7 @@ button {
 
 /* Hover effect */
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
 
@@ -178,7 +179,6 @@ button:hover {
     main {
         max-width: 1500px;
         margin: auto;
-        /* background-color: red; */
     }
 
     .hero {
@@ -191,7 +191,6 @@ button:hover {
 
     .content {
         max-width: 1500px;
-        /* background-color: red; */
         margin: auto;
     }
 
@@ -199,15 +198,9 @@ button:hover {
         display: block;
     }
 
-    .parnershipContainer  {
-        /* display: none; */
-    }
-
     .container1 {
-        /* background-color: red; */
         display: flex;
         justify-content: space-evenly;
-        /* flex-direction: row;*/
     }
 
     .container1 div {
@@ -217,10 +210,6 @@ button:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
-    .container2 {
-        /* background-color: red; */
-    }
 
     .container2 div {
         margin: auto;
@@ -253,16 +242,11 @@ button:hover {
         font-size: 30px;
     }
 
-    .container1 {
-        /* display: block; */
-    }
-
     .tirepic, .store {
         margin: 20px;
     }
 
     .parnershipContainer .greenmax, .otani, .amistrong {
-        /* width: 100%; */
         margin: auto;
     }
 
@@ -289,7 +273,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-    /* margin-right: 20px; */
 }
 
 nav a {
@@ -322,8 +305,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1;
-    /* position: absolute; */
-    /* bottom: 0; */
     width: 100%;
     position: relative;
 }
