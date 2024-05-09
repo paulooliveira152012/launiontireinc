@@ -9,28 +9,34 @@
 </head>
 <body>
 
-  <header class="bg-dark text-white text-center p-4">
-    <h1>La Union Tire Inc.</h1>
-    <p id="slogan">Your one-stop destination for quality tires and services.</p>
-  </header>
-
-  <div class="hero"></div>
-    <!-- Add a button for language toggle -->
+  <div>
+    <header class="bg-dark text-white text-center p-4">
+      <h1>La Union Tire Inc.</h1>
+      <p id="slogan">Your one-stop destination for quality tires and services.</p>
+    </header>
+    <div class="hero"></div>
+  </div>
+    <!-- Add a button for language toggle x-->
     <div class="buttonContainer">
         <button onclick="toggleLanguage()" id="buttonElement">Español</button>
     </div>
   <main>
-    <div class="left">
+    <div class="servicesContainer">
         <h2 id="ourServices">Our Services</h2>
 
-        <ul>
-            <li id="tireSales">&#10003; Tire Sales</li>
-            <li id="tireInstallation">&#10003; Tire Installation</li>
-            <li id="wheelAlignment">&#10003; Wheel Alignment</li>
-            <li id="tireRotation">&#10003; Tire Rotation</li>
-            <li id="flatTireRepair">&#10003; Flat Tire Repair</li>
-            <li id="brakeServices">&#10003; Brake Services</li>
-        </ul>
+        <div class="servicesSubContainer">
+          <div>
+            <ul>
+                <li id="tireSales">&#10003; Tire Sales</li>
+                <li id="tireInstallation">&#10003; Tire Installation</li>
+                <li id="wheelAlignment">&#10003; Wheel Alignment</li>
+                <li id="tireRotation">&#10003; Tire Rotation</li>
+                <li id="flatTireRepair">&#10003; Flat Tire Repair</li>
+                <li id="brakeServices">&#10003; Brake Services</li>
+            </ul>
+         </div>
+          <div class="tireServiceArea"></div>
+        </div>
     </div>
 
   </main>
@@ -56,24 +62,24 @@
   </div> -->
 
 <main>
-    <div class="container1">
-        <div class="left salesign"></div>
+    <div class="images">
+        <div class="right salesign"></div>
         <div class="right tirepic"></div>
         <div class="right store" ></div>
         <div class="right salesign"></div>
              
     </div>
 
-    <div class="container2" >
+    <div class="tiresBrand" >
         <h2 id="partnership" style="margin: auto;">Parternship</h2>
         <div class="parnershipContainer" >
-            <div class="greenmax"></div>
-            <div class="otani"></div>
-            <div class="amistrong"></div>
+            <div class="brandContainer greenmax"></div>
+            <div class="brandContainer otani"></div>
+            <div class="brandContainer amistrong"></div>
         </div>
     </div>
 
-    <div class="container2 calltoaction" id="callToAction">
+    <div class="calltoaction" id="callToAction">
         <p>"Revitalize Your Drive with La Union Tire Inc.! Explore our premium tire selection, experience expert tire repairs, and elevate your safety with precision brake installations. Choose reliability, choose quality – schedule your visit today and let us enhance your driving experience. Trust La Union Tire Inc. for unparalleled expertise and exceptional service. Your journey to superior tires and reliable brakes starts here!"</p>
     </div>
   </main>

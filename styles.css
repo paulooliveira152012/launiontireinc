@@ -31,16 +31,26 @@ header {
     margin-top: 20px;
 }
 
-.container1 {
-    height: auto;
+.images {
+    height: 300px;
     /* background-color: red; */
     padding: 20px;
     width: 100%;
     margin-bottom: 20px;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.container2 {
+.salesign {
+    background-image: url('./tires/tiresign.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* display: none; */
+    height: 100%;
+}
+
+.tiresBrand {
     height: auto;
     /* background-color: red; */
     padding: 20px;
@@ -49,7 +59,28 @@ header {
     /* display: flex; */
 }
 
-.container2 h2 {
+.tirepic {
+    background-image: url('./o.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    /* background-color: red; */
+    /* height: 600px; */
+}
+
+.store {
+    background-image: url('./store.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    margin-left: 20px;
+}
+
+
+
+.tiresBrand h2 {
     text-align: center;
 }
 
@@ -59,87 +90,73 @@ header {
     justify-content: space-evenly;
 }
 
+.brandContainer {
+    /* background-color: red; */
+    height: 50px;
+    background-position: center;
+    width: 200px;
+    background-size: cover;
+}
+
 .parnershipContainer .greenmax {
     background-image: url('./tires/greenmaxlogo.png');
-    width: 300px;
-    background-size: cover;
-    height: 200px;
 }
 
 .parnershipContainer .otani {
     background-image: url('./tires/otani.png');
-    width: 300px;
-    background-size: cover;
-    height: 100px;
 }
 
 .parnershipContainer .amistrong {
     background-image: url('./tires/amistrong.jpeg');
-    width: 300px;
-    background-size: cover;
-    height: 100px;
-    margin-bottom: 70px;
 }
-
-p {
-    font-size: 20;
-}
-
 
 
 li {
     list-style: none;
 }
 
-.left {
+.servicesContainer {
     border-radius: 20px;
     padding: 20px;
     flex: 1;
     text-align: center;
 }
 
-.left ul li {
+.servicesSubContainer {
+    display: flex;
+}
+
+.servicesContainer div {
+    flex: 1;
+}
+
+.servicesContainer ul li {
     padding: 20px;
     background-color: #333;
     color: white;
     margin: 10px;
     border-radius: 10px;
-}
-
-.right {
-    /* background-color: blue; */
+    /* width: 50%; */
     flex: 1;
 }
 
-.tirepic {
-    background-image: url('./o.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.tireServiceArea {
+    background-image: url('./tire2.png');
+    /* height: 100%; */
+    /* width: 100%; */
+    flex: 1;
     /* background-color: red; */
-    height: 600px;
-    
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.store {
-    background-image: url('./store.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: red; */
-    height: 600px;
+.right {
+    flex: 1;
 }
 
-.salesign {
-    background-image: url('./tires/tiresign.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
-}
 
 .calltoaction {
-    font-size: 30px;
     text-align: justify;
     padding: 50px;
 }
@@ -167,91 +184,6 @@ button {
 /* Hover effect */
 button:hover {
     background-color: #45a049; 
-}
-
-
-@media screen and (min-width: 1600px) {
-    .tirepic, .store {
-        background-size: contain;
-        margin: 10px;
-    }
-
-    main {
-        max-width: 1500px;
-        margin: auto;
-    }
-
-    .hero {
-        height: 600px;
-    }
-
-    .intro {
-        width: 100%;
-    }
-
-    .content {
-        max-width: 1500px;
-        margin: auto;
-    }
-
-    .salesign {
-        display: block;
-    }
-
-    .container1 {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .container1 div {
-        width: 25%;
-        
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .container2 div {
-        margin: auto;
-    }
-
-    .parnershipContainer {
-        display: block;
-        margin: auto;
-    }
-
-    .tirepic, .store {
-        display: block;
-    }
-
-    .container1 {
-        display: block;
-    }
-
-    .container1 div {
-        margin: 20px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .intro {
-        padding: 30px;
-    }
-
-    .intro p, li {
-        font-size: 30px;
-    }
-
-    .tirepic, .store {
-        margin: 20px;
-    }
-
-    .parnershipContainer .greenmax, .otani, .amistrong {
-        margin: auto;
-    }
-
-    
-
 }
 
 .section1 {
@@ -309,6 +241,125 @@ footer {
     position: relative;
 }
 
-#title2 {
-    color: red;
+@media screen and (max-width: 700px) {
+
+    .intro, .calltoaction {
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .tireServiceArea {
+        display: none;
+    }
+
+    .images {
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+    }
+
+    .images div {
+        height: 100%;
+        width: 500px;
+        background-size: contain;
+        margin:  10px;
+
+    }
+
+    .images .salesign {
+        display: none;
+    }
+
+    .parnershipContainer {
+        flex-direction: column;
+    }
+
+    .parnershipContainer div {
+        width: 80%;
+        height: 100px;
+        margin: 20px;
+    }
 }
+
+
+/* @media screen and (min-width: 1600px) {
+    .tirepic, .store {
+        background-size: contain;
+        margin: 10px;
+    }
+
+    main {
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .content {
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .salesign {
+        display: block;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .container1 div {
+        width: 25%;
+        
+    }
+} */
+
+/* @media screen and (max-width: 1000px) {
+
+    .container2 div {
+        margin: auto;
+    }
+
+    .parnershipContainer {
+        display: block;
+        margin: auto;
+    }
+
+    .tirepic, .store {
+        display: block;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .container1 div {
+        margin: 20px;
+    }
+} */
+
+/* @media screen and (min-width: 1000px) {
+    .intro {
+        padding: 30px;
+    }
+
+    
+
+    .tirepic, .store {
+        margin: 20px;
+    }
+
+    .parnershipContainer .greenmax, .otani, .amistrong {
+        margin: auto;
+    }
+} */
+
+
+
