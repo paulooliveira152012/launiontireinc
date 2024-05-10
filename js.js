@@ -64,6 +64,7 @@ function toggleLanguage() {
 
         // Update button text to English
         buttonElement.innerText = "English";
+        buttonElement.style.backgroundColor = "red"
 
         // Update partnership to spanish
         partnership.innerText = "Colaboración";
@@ -103,12 +104,13 @@ function toggleLanguage() {
         brakeServicesElement.innerHTML = "&#10003; Brake Services";
 
           // Update content to English
-          contactHeader.innerText = "Contact Us";
+          contact.innerText = "Contact Us";
           visit.innerText = "Visit us at: 630 New Point Rd Elizabeth, NJ 07206";
-          email.innerText = "Email: info@tireshop.com";
+        //   email.innerText = "Email: info@tireshop.com";
           phone.innerText = "Phone: (908) 354-3044";
 
         // Update button text to English
         buttonElement.innerText = "Español";
+        buttonElement.style.backgroundColor = "#4CAF50"
     }
 }
